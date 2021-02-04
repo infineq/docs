@@ -127,19 +127,20 @@ ul{
   margin: 3px 4px 3px 0px;
 }
 
-.sidebar-nav ul > span{
-  margin-left: -4px;
-}
-
 .sidebar-nav ul .open > span::after, .sidebar-nav ul .active > span{
   text-decoration: underline;
 }
 
 .sidebar-nav ul span:hover{
   text-decoration: underline;
+  cursor: pointer;
 }
 
-.sidebar-nav ul span::after {
+.sidebar-nav > ul > li > ul > li > span{
+  margin-left: -4px;
+}
+
+.sidebar-nav > ul > li > ul > li.folder > span::after {
 	content: '';
   display: inline-block;
   margin-left: 6px;
@@ -151,34 +152,30 @@ ul{
   transition: transform .1s;
 }
 
-.sidebar-nav ul > li .folder span::after{
+.sidebar-nav > ul > li > ul > li.folder span::after{
   margin: 1px 6px;
 }
 
-.sidebar-nav ul > li .collapse span::after{
-  margin: 2px 6px;
+.sidebar-nav > ul > li > ul > li.collapse span::after{
+  margin: 1px 6px;
 }
 
-.sidebar-nav ul > li .open span::after{
+.sidebar-nav > ul > li > ul > li.open span::after{
   margin: 3px 6px;
 }
 
-.sidebar-nav ul .open > span, .sidebar-nav ul .active > span{
+.sidebar-nav > ul > li > ul > li.open > span, .sidebar-nav > ul > li > ul > li.active > span{
   color: #209698;
   cursor: pointer;
 }
 
-.sidebar-nav ul .open > span::after, .sidebar-nav ul .active > span::after {
+.sidebar-nav > ul > li > ul > li.open > span::after , .sidebar-nav > ul > li > ul > li.active > span::after  {
   border-right: 1.8px solid #209698;
   border-bottom: 1.8px solid #209698;
   transform: rotate(45deg);
 }
-.sidebar-nav ul .folder:not(.open):not(.active) > span{
-  color: #505d6b;
-  cursor: pointer;
-}
 
-.sidebar-nav ul .collapse > span::after {
+.sidebar-nav > ul > li > ul > li.collapse > span::after {
 	transform: rotate(-45deg);
 }
 
@@ -187,6 +184,16 @@ ul{
 /* SIDE BAR CSS */
 .sidebar li {
   margin: 2px 0;
+}
+
+.sidebar span {
+  color: #505d6b;
+  font-size: 14px;
+  font-weight: 400;
+  overflow: hidden;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .sidebar>h1 {
@@ -209,11 +216,6 @@ ul{
 }
 
 /* SIDE BAR CSS */
-
-.app-name{
-  padding-left: 15px;
-}
-
 .sidebar-toggle{
   background-color: white !important;
 }
