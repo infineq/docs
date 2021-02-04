@@ -2,8 +2,7 @@
 
 ### Getting Started
 
-The consistent and accurate quantification of proteins bymass spectrometry (MS)-based (1) proteomics depends on the
-performance of instruments, acquisition methods and data analysis software. In collaboration with the software
+AND performance of instruments, acquisition methods and data analysis software. In collaboration with the software
 developers
 
 <div class="note">
