@@ -45,33 +45,65 @@
       },
       plugins: [
         function (hook, vm) {
-          hook.doneEach(function () {
+          hook.doneEach( () => {
             let element = document.querySelectorAll('.docsify-pagination-container');
               let target = document.querySelectorAll('article');
               let pageNotFound = document.querySelectorAll('.not-found');
               element.forEach((ele)=>{
-                console.log(target[0].clientHeight, window.innerHeight/1.2);
                 if (target[0].clientHeight < window.innerHeight/1.2) {
                   pageNotFound.length > 0 ? ele.style.display = 'none' : '';
                   ele.classList.add('bottom-navigation');
                 }
               })
+            let toc = document.getElementById('stick-toc');
+            toc.innerHTML = `
+              <nav>
+                <div class="table-of-contents">
+                  <div class="flex-center">
+                    <div>
+                      <img src="./assets/media/Vector.svg" width="11" height="9.95" alt="burger">
+                    </div>
+                    <div class="heading">
+                      TABLE OF CONTENTS
+                    </div>
+                  </div>
+                  <div>
+                    <div id="toc-container" class="toc-items"></div>
+                  </div>
+                </div>
+              </nav>
+            `;
+
+
+            let toc_elements = document.getElementsByTagName('h3');
+            let toc_container = document.getElementById('toc-container');
+
+            let current_page = window.location.href.split("/#/")[1];
+
+            for (let index = 0; index < toc_elements.length; index++) {
+              let toc_link = document.createElement('a');
+
+              toc_link.href = "#/" + current_page + "?id=" + toc_elements[index].id + ""
+
+              toc_link.text = toc_elements[index].id
+
+              toc_container.appendChild(toc_link)
+            }
           }),
-          hook.afterEach(function (html) {
+          hook.afterEach( (html) => {
             
             setTimeout(()=>{
-              let section = document.getElementById('faq-section');
-            
-              let element = `
+
+              let mainSection = document.getElementsByClassName('main-header')[0]
+              
+              mainSection.insertAdjacentHTML('afterend', `
                     <div class="faq flex-center">
                       <div>
                         <span>Questions?</span>
                         <a href="https://infineq.com/#request-access"  target="_blank" rel="noopener noreferrer">Contact us.</a>
                       </div>
                     </div>
-              `;
-
-              section.insertAdjacentHTML('afterEnd', element);
+              `)
               
               setTimeout(()=>{
                 let element = document.querySelectorAll('.faq');

@@ -1,0 +1,28 @@
+name: Continous Integration and Development
+
+on: [push]
+
+jobs:
+  stuff:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Let the magic happen
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12.15.0
+
+      - run: npm i
+      - run: node .
+
+      - name: Add to git repo
+        run: |
+          git add .
+          git config --global user.name ${{ secrets.INFINEQ_USERNAME }}
+          git config --global user.email ${{ secrets.INFINEQ_EMAIL }}
+          git commit -m "Automation"
+      - name: Push
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
