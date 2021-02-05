@@ -1,6 +1,9 @@
 name: Continous Integration and Development
 
-on: [push]
+on:
+  push:
+    tags:
+      - '*'
 
 jobs:
   stuff:

@@ -85,7 +85,7 @@
 
               toc_link.href = "#/" + current_page + "?id=" + toc_elements[index].id + ""
 
-              toc_link.text = toc_elements[index].id
+              toc_link.text = toc_elements[index].id.replace(/-/g, " ")
 
               toc_container.appendChild(toc_link)
             }
