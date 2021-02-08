@@ -12,6 +12,7 @@
 
   - <span>Customization</span>
   - <span>Configuration</span>
+  - [cool](/chapters/$b_Customization/cool.md)
 - Guide
 
   - <span>Deploy</span>
