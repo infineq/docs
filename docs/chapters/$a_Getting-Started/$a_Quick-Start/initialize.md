@@ -1,27 +1,4 @@
-<div class="main-header">
-  <div class="stick-toc">
-    <nav>
-      <div class="table-of-contents">
-        <div class="flex-center">
-          <div>
-            <img src="./assets/media/Vector.svg" width="11" height="9.95" alt="burger">
-          </div>
-          <div class="heading">
-            TABLE OF CONTENTS
-          </div>
-        </div>
-        <div>
-          <div class="toc-items">
-            <a href="#/quickstart?id=getting-started">Getting started</a>
-            <a href="#/quickstart?id=types-of-proteomics">Types of proteomics</a>
-            <a href="#/quickstart?id=types-of-proteomics-1">Types of proteomics</a>
-            <a href="#/quickstart?id=shell-code">Shell code</a>
-          </div>
-        </div>
-      </div>
-    </nav>
-  </div>
-<div>
+<div class="main-header"><div id="stick-toc" class="stick-toc"></div><div>
 
 ### Getting Started
 
@@ -82,15 +59,4 @@ Transl Med 17, 184 (2019). https://doi.org/10.1186/s12967-019-1937-9
 * Navarro P, Kuharev J, Gillet LC, et al. . A multicenter study benchmarks software tools for label-free
 proteome quantification. Nat Biotechnol 2016;34:1130–1136.
 
-
-  <div class="flex-center last-updated">
-      <div>
-        <img src="./assets/media/sync-alt-solid 1.svg" width="19" height="19" alt="sync-icon">
-      </div>
-      <div class="last-updated-info">
-        This page was last updated on Jan 22, 2020
-      </div>
-    </div>
-  </div>
-</div>
-<div id="faq-section" ></div>
+<div class="flex-center last-updated"><div><img src="./assets/media/sync-alt-solid 1.svg" width="19" height="19" alt="sync-icon"></div><div class="last-updated-info">This page was last updated on Feb 00 2021</div></div></div></div>

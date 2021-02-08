@@ -136,7 +136,7 @@ ul{
   cursor: pointer;
 }
 
-.sidebar-nav > ul > li > ul > li > span{
+.sidebar-nav > ul > li > ul > li > span, .sidebar-nav > ul > li > ul > li > a{
   margin-left: -4px;
 }
 
