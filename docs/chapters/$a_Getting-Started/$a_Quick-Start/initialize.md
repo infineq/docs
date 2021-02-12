@@ -20,7 +20,7 @@ developers
 </div>
 
 The consistent and accurate quantification of proteins bymass spectrometry (MS)-based (1) proteomics depends on the
-performance of instruments, acquisition methods . data analysis software. In collaboration with the software
+performance of instruments, acquisition methods data analysis software. In collaboration with the software
 developers (sequential window acquisition of all theoretical fragment ion spectra), a method that uses
 data-independent acquisition (DIA) for label-free protein quantification. We analyzed high-complexity test datasets
 from hybrid proteome samples of instruments using different SWATH isolation windows setups.
