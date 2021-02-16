@@ -7,7 +7,6 @@
   - <span>Writing More Pages</span>
   - <span>Custom Navbar</span>
   - <span>Cover Page</span>
-  - [SomeList](/chapters/$a_Getting-Started/SomeList.md)
 - Customization
 
   - <span>Customization</span>
