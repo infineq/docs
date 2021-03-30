@@ -4,7 +4,7 @@
       <div class="flex-center">
         <ul class="flex-center logo-head">
           <li>
-            <img src="./assets/media/logo-infineq.svg" width="68" height="53" alt="logo">
+            <img src="./assets/media/logo-infineq.svg" alt="logo">
           </li>
           <li id="separator">
             <span class="vertical-separator"></span>
