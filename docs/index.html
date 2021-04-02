@@ -12,6 +12,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">
   <link rel="stylesheet" href="./assets/style/index.css">
+  <link rel="stylesheet" href="./assets/style/theme-custom.css">
 </head>
 
 <body>
@@ -91,11 +92,11 @@
             }
           }),
           hook.afterEach( (html) => {
-            
+
             setTimeout(()=>{
 
               let mainSection = document.getElementsByClassName('main-header')[0]
-              
+
               mainSection.insertAdjacentHTML('afterend', `
                     <div class="faq flex-center">
                       <div>
@@ -104,7 +105,7 @@
                       </div>
                     </div>
               `)
-              
+
               setTimeout(()=>{
                 let element = document.querySelectorAll('.faq');
                 let target = document.querySelectorAll('article');
@@ -114,7 +115,7 @@
                     ele.style.bottom = "70px"
                   }
                 })
-                
+
                 element = document.querySelectorAll('.last-updated ');
                 element.forEach((ele)=>{
                   if (target[0].clientHeight < window.innerHeight/1.2) {
