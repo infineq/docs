@@ -4,7 +4,8 @@
       <div class="flex-center">
         <ul class="flex-center logo-head">
           <li>
-            <img src="./assets/media/logo-infineq.svg" alt="logo">
+            <a href="https://infineq.com">
+            <img src="./assets/media/logo-infineq.svg" alt="logo"></a>
           </li>
           <li id="separator">
             <span class="vertical-separator"></span>
@@ -23,14 +24,14 @@
       </div>
       <div class="flex-center">
         <ul id="menu-links" class="menu-links">
-          <li><a href="#/home">Home</a></li>
-          <li><a href="#/features">Features</a></li>
-          <li><a href="#/watch-demo">Watch Demo</a></li>
-          <li><a href="#/blog">Blog</a></li>
+          <li><a href="https://infineq.com">Home</a></li>
+          <li><a href="https://infineq.com/#features">Features</a></li>
+          <li><a href="https://infineq.com/#video">Watch Demo</a></li>
+          <li><a href="https://infineq.com/blog">Blog</a></li>
           <li><a href="#">Docs</a></li>
         </ul>
         <ul class="request-access flex-center">
-          <a href="https://infineq.com/#request-access" target="_blank" rel="noopener noreferrer">Request access</a>
+          <a href="https://infineq.com/blog#request-access" target="_blank" rel="noopener noreferrer">Request access</a>
         </ul>
       </div>
         <div id="menu-link-small-screen" class="flex-center">
@@ -38,10 +39,10 @@
             <li onclick="CloseNavBar()">
               <img src="./assets/media/menu-icon.png" width="34" height="34" alt="menu-icon">
             </li>
-            <li><a href="#/home">Home</a></li>
-            <li><a href="#/features">Features</a></li>
-            <li><a href="#/watch-demo">Watch Demo</a></li>
-            <li><a href="#/blog">Blog</a></li>
+            <li><a href="https://infineq.com">Home</a></li>
+            <li><a href="https://infineq.com/#features">Features</a></li>
+            <li><a href="https://infineq.com/#video">Watch Demo</a></li>
+            <li><a href="https://infineq.com/blog">Blog</a></li>
             <li><a href="#">Docs</a></li>
           </ul>
         </div>
