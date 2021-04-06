@@ -24,17 +24,27 @@ main{
   right: initial;
   text-align: initial;
   z-index: initial;
-  height: 100px;
   background-color: #F5F5F5;
 }
 
 .app-nav.no-badge {
   margin: 0;
+  margin-bottom: 40px;
 }
 
 header {
   max-width: 1160px;
   margin: 0 auto;
+}
+
+.markdown-section h3 {
+    font-size: 2.1rem;
+    color: #121212;
+}
+
+.markdown-section p {
+    font-size: 16px;
+    color: #121212;
 }
 
 h1,h2,h3 > a {
@@ -511,4 +521,5 @@ article ul li::marker{
   .request-access > a{
     font-size: 12px;
   }
+
 }
